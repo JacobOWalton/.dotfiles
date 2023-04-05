@@ -1,7 +1,7 @@
-linux.sh: cleanup.sh
-	$(CC) $(CFLAGS) -o $(EXE) ./bin/linux.sh
+linux: clean
+	./bin/linux.sh
 
-cleanup.sh:
-	$(CC) $(CFLAGS) -o $(EXE) ./bin/cleanup.sh
+clean:
+	./bin/cleanup.sh
 
 
